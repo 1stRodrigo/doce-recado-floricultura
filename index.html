@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIX ICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Doce Recado | Floricultura</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <i class="ri-leaf-line nav__logo-icon"></i> Plantex
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="#faqs" class="nav__link">FAQs</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <img
+            src="assets/img/logo/doce-recado-logo.png"
+            alt=""
+            class="home__img"
+          />
+
+          <div class="home__data">
+            <h1 class="home__title">
+              Plants will make <br />
+              your life better
+            </h1>
+            <p class="home__description">
+              Create incredible plant design for your offices or apastaments.
+              Add fresness to your new ideas.
+            </p>
+            <a href="#about" class="button button--flex">
+              Explore <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+
+          <div class="home__social">
+            <span class="home__social-follow">Follow Us</span>
+
+            <div class="home__social-links">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section container" id="about">
+        <div class="about__container grid">
+          <img
+            src="assets/img/home/flowers-home.jpeg"
+            alt=""
+            class="about__img"
+          />
+
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              Quem somos & <br />
+              Por que nos escolher?
+            </h2>
+
+            <p class="about__description">
+              Fundada em 2005 nossa empresa é referência em Campinas e região
+              para quem procura produtos que agreguem sentimento e bom gosto.
+            </p>
+
+            <div class="about__details">
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Te ajudamos a transformar sua ideia em realidade.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Nós trabalhamos com delivery.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Possuímos um atendimento humanizado
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Temos diversas opções de presente.
+              </p>
+            </div>
+
+            <a
+              href="https://api.whatsapp.com/send?phone=5519994476976&text=Contate-nos%20por%20WhatsApp!"
+              class="button--link button--flex"
+              target="_blank"
+            >
+              <i class="ri-whatsapp-line"></i>
+              Entrar em contato agora
+              <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== STEPS ====================-->
+      <section class="steps section container">
+        <div class="steps__bg">
+          <h2 class="section__title-center steps__title">
+            Dicas para conservar o seu<br />
+            arranjo ou buquê de flores:
+          </h2>
+
+          <div class="steps__container grid">
+            <div class="steps__card">
+              <div class="steps__card-number">01</div>
+              <h3 class="steps__card-title">Complete a água</h3>
+              <p class="steps__card-description">
+                Complete o compartimento de água imediatamente, usando sempre
+                água fresca e limpa.
+              </p>
+            </div>
+
+            <div class="steps__card">
+              <div class="steps__card-number">02</div>
+              <h3 class="steps__card-title">Deixe em um local fresco</h3>
+              <p class="steps__card-description">
+                Mantenha seu arranjo sempre em local fresco evitando exposição
+                direta ao sol.
+              </p>
+            </div>
+
+            <div class="steps__card">
+              <div class="steps__card-number">03</div>
+              <h3 class="steps__card-title">Troque a água diariamente</h3>
+              <p class="steps__card-description">
+                Troque a água de seu arranjo diariamente, usando água fresca e
+                limpa para evitar a proliferação de microrganismos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="product section container" id="products">
+        <h2 class="section__title-center">
+          Confira alguns de <br />
+          nossos produtos
+        </h2>
+
+        <p class="product__description">
+          Aqui estão alguns produtos selecionados com amor e carinho de nosso
+          showroom. São ótimas opções para presentear quem você ama.
+        </p>
+
+        <div class="product__container grid">
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="assets/img/products/ramalhete-girassois.jpeg"
+              alt=""
+              class="product__img"
+            />
+
+            <h3 class="product__title">Ramalhete de girassois</h3>
+            <span class="product__price">$19.99</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="assets/img/products/buque-de-rosas-colombiana.jpeg"
+              alt=""
+              class="product__img"
+            />
+
+            <h3 class="product__title">Buquê de rosas colombiana</h3>
+            <span class="product__price">$11.99</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="assets/img/products/box-chocolate-e-bubble.jpeg"
+              alt=""
+              class="product__img"
+            />
+
+            <h3 class="product__title">Box chocolate Bubble</h3>
+            <span class="product__price">$7.99</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="assets/img/products/balde-heineken.jpeg"
+              alt=""
+              class="product__img"
+            />
+
+            <h3 class="product__title">Balde Heineken</h3>
+            <span class="product__price">$5.99</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="assets/img/products/café-com-humor.jpg"
+              alt=""
+              class="product__img"
+            />
+
+            <h3 class="product__title">Café com humor</h3>
+            <span class="product__price">$10.99</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="assets/img/products/box-iii.jpg"
+              alt=""
+              class="product__img"
+            />
+
+            <h3 class="product__title">Box III</h3>
+            <span class="product__price">$8.99</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== QUESTIONS ====================-->
+      <section class="questions section" id="faqs">
+        <h2 class="section__title-center questions__title container">
+          Dúvidas mais frequentes e <br />
+          perguntas comuns
+        </h2>
+
+        <div class="questions__container container grid">
+          <div class="questions__group">
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Qual será o prazo de entrega do meu pedido?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Recebemos entregas todos os dias Seg a Sex (9h às 17h): Fazemo
+                  entregas através de motoboy. Por conta da alta demanda pedimos
+                  para que nossos clientes programem a entrega com antecendencia
+                  para que possamos organizar nossas rotas e assim entregarmos
+                  no horário escolhido, afim de oferecer uma boa expêriencia
+                  para nossos clientes.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Quais as formas de pagamento disponíveis?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Aceitamos como forma de pagamento: <br />
+                  Cartão de crédito, cartão de débito, transferência bancária e
+                  Pix. No caso de cartão de crédito aceitamos as bandeiras:
+                  Visa, Mastercard, Amex e Elo.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Qual o horário de funcionamento?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  O horário de funcionamento é: <br />
+                  Segunda a Sexta (8:00 às 18:30) <br />
+                  Sábado (8:00 às 13:00) <br />
+                  Domingo <strong>FECHADO</strong> <br />
+                  Caso haja mudança de horário em dia de feriado, anunciamos em
+                  nossas redes sociais.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="questions__group">
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  A Doce Recado atende via whatsapp?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Sim. A Doce Recado atende via whatsapp (19) 99447-6976. Sempre
+                  disponível para prestar atendimento especial e personalizado
+                  para você, criando sugestões criativas e adequadas às suas
+                  necessidades.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Onde a loja fica localizada?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  A Doce Recado fica localizada na Rua Esther Moretzhon de
+                  Camargo, 838, Jardim Santana - Campinas, SP
+                </p>
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!4v1677632102271!6m8!1m7!1se_dkCnO-5umc5ROyBtGpWQ!2m2!1d-22.85341187024527!2d-47.04074323047274!3f174.7705506564455!4f-0.4497597571944709!5f0.8759673366691292"
+                  style="display: block; margin: 0 var(--mb-1); border: none"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section container" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__box">
+            <h2 class="section__title">
+              Fale com a Doce Recado <br />
+              e diga sua ideia
+            </h2>
+
+            <div class="contact__data">
+              <div class="contact__information">
+                <h3 class="contact__subtitle">
+                  Ligue para nós e receba suporte imediato
+                </h3>
+                <span class="contact__description">
+                  <i class="ri-phone-line contact__icon"></i>
+                  (19) 99447-6976
+                </span>
+              </div>
+
+              <div class="contact__information">
+                <h3 class="contact__subtitle">Escreva um Email</h3>
+                <span class="contact__description">
+                  <i class="ri-mail-line contact__icon"></i>
+                  doce-recado@hotmail.com
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form">
+            <div class="contact__inputs">
+              <div class="contact__content">
+                <input type="email" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Email</label>
+              </div>
+
+              <div class="contact__content">
+                <input type="text" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Assunto</label>
+              </div>
+
+              <div class="contact__content contact__area">
+                <textarea
+                  name="message"
+                  placeholder=" "
+                  class="contact__input"
+                ></textarea>
+                <label for="" class="contact__label">Mensagem</label>
+              </div>
+            </div>
+
+            <button class="button button--flex">
+              Enviar Mensagem
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <i class="ri-leaf-line footer__logo-icon"></i> Doce Recado
+          </a>
+
+          <h3 class="footer__title">Horário de funcionamento</h3>
+
+          <div class="footer__data">
+            <div class="footer_information">
+              <p>
+                Segunda (8:00 às 18:30) <br />
+                Terça (8:00 às 18:30) <br />
+                Quarta (8:00 às 18:30) <br />
+                Quinta (8:00 às 18:30) <br />
+                Sexta (8:00 às 18:30) <br />
+                Sábado (8:00 às 13:00) <br />
+                Domingo <strong>FECHADO</strong> <br /><br />
+
+                Em caso de feriado, o horário de funcionamento pode haver
+                mudanças, todas elas são anunciadas através de nossas redes
+                sociais.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Nosso endereço</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">
+              Rua Esther Moretzhon de Camargo, 838, Jardim Santana <br />
+              Campinas, SP 13088-613
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Contate-nos</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">(19) 99447-6976</li>
+
+            <div class="footer__social">
+              <a
+                href="https://pt-br.facebook.com/docerecadofloricultura/"
+                class="footer__social-link"
+                target="_blank"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/docerecadofloriculturacps/"
+                class="footer__social-link"
+                target="_blank"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=5519994476976&text=Contate-nos%20por%20WhatsApp!"
+                class="footer__social-link"
+              >
+                <i class="ri-whatsapp-line"></i>
+              </a>
+            </div>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Nós aceitamos cartões de crédito</h3>
+
+          <div class="footer__cards">
+            <img src="assets/img/card1.png" alt="" class="footer__card" />
+            <img src="assets/img/card2.png" alt="" class="footer__card" />
+            <img src="assets/img/card3.png" alt="" class="footer__card" />
+            <img src="assets/img/card4.png" alt="" class="footer__card" />
+          </div>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; Rodrigo Oliveira. All rigths reserved</p>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
