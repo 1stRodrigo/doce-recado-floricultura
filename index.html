@@ -7,7 +7,7 @@
     <!--=============== FAVICON ===============-->
     <link
       rel="shortcut icon"
-      href="assets/img/favicon.png"
+      href="assets/img/logo/doce-recado-logo-light.png"
       type="image/x-icon"
     />
 
@@ -27,25 +27,26 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
-          <i class="ri-leaf-line nav__logo-icon"></i> Plantex
+          <img src="assets/img/logo/doce-recado-logo-light.png" class="ri-leaf-line nav__logo-icon"></img>
         </a>
+        
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
+              <a href="#home" class="nav__link active-link">ínicio</a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+              <a href="#about" class="nav__link">Sobre</a>
             </li>
             <li class="nav__item">
-              <a href="#products" class="nav__link">Products</a>
+              <a href="#products" class="nav__link">Produtos</a>
             </li>
             <li class="nav__item">
               <a href="#faqs" class="nav__link">FAQs</a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact Us</a>
+              <a href="#contact" class="nav__link">Contate nos</a>
             </li>
           </ul>
 
@@ -70,22 +71,22 @@
       <section class="home" id="home">
         <div class="home__container container grid">
           <img
-            src="assets/img/logo/doce-recado-logo.png"
+            src="assets/img/logo/doce-recado-logo-light.png"
             alt=""
             class="home__img"
           />
 
           <div class="home__data">
             <h1 class="home__title">
-              Plants will make <br />
-              your life better
+              Para todas as <br />
+              celebrações da vida!
             </h1>
             <p class="home__description">
-              Create incredible plant design for your offices or apastaments.
-              Add fresness to your new ideas.
+              Prover produtos e serviços com alta qualidade e estilo próprio,
+              garantindo a excelência no atendimento ao cliente.
             </p>
             <a href="#about" class="button button--flex">
-              Explore <i class="ri-arrow-right-down-line button__icon"></i>
+              Saiba mais <i class="ri-arrow-right-down-line button__icon"></i>
             </a>
           </div>
 
@@ -230,14 +231,16 @@
               src="assets/img/products/ramalhete-girassois.jpeg"
               alt=""
               class="product__img"
-            />
+              />
+              <!-- onclick="imgExpand(this)" -->
+            <p class="product_visualize">Buquê</p>
 
             <h3 class="product__title">Ramalhete de girassois</h3>
-            <span class="product__price">$19.99</span>
+            <!-- <span class="product__price">EXPANDIR</span> -->
 
-            <button class="button--flex product__button">
+            <!-- <button class="button--flex product__button">
               <i class="ri-shopping-bag-line"></i>
-            </button>
+            </button> -->
           </article>
 
           <article class="product__card">
