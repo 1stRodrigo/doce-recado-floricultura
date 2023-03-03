@@ -153,3 +153,48 @@ sr.reveal(`.about__data, .contact__form`, { origin: "right" });
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`, {
   interval: 100,
 });
+
+/*=============== PRODUCT IMAGE EXPAND ===============*/
+function imageExpand() {
+  const screenWidth = window.screen.width;
+  console.log(screenWidth);
+
+  const productImages = document.querySelectorAll(".product__img");
+
+  productImages.forEach((Image) => {
+    if (screenWidth < 767) {
+      Image.addEventListener("click", () => {
+        toggleImage(Image);
+      });
+    }
+  });
+}
+imageExpand();
+
+const toggleImage = (Image) => {
+  Image.classList.toggle("product__imgExpand");
+};
+
+/*   
+const productImages = document.querySelectorAll(".product__img");
+
+productImages.forEach((image) => {
+  image.addEventListener("click", () => {
+    const expandImage = document.querySelector(".product__imgExpand");
+
+    toggleImage(image);
+
+    if (expandImage && expandImage !== image) {
+      toggleImage(image);
+    }
+  });
+});
+
+const toggleImage = (image) => {
+  const imageContent = image.querySelector(".product__img");
+
+  if (image.classList.contains(".product__imgExpand")) {
+    console.log("ja existe classe imgExpand aqui");
+  }
+};
+ */
