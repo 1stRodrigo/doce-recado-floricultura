@@ -121,6 +121,7 @@ if (selectedTheme) {
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
     darkTheme
   );
+  changeImage();
   themeButton.classList[selectedIcon === "ri-moon-line" ? "add" : "remove"](
     iconTheme
   );
@@ -131,7 +132,9 @@ themeButton.addEventListener("click", () => {
   // Add or remove the dark / icon theme
   document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
+  changeImage();
   // We save the theme and the current icon that the user chose
+  localStorage.setItem("selected-image", changeImage());
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
@@ -154,47 +157,39 @@ sr.reveal(`.steps__card, .product__card, .questions__group, .footer`, {
   interval: 100,
 });
 
-/*=============== PRODUCT IMAGE EXPAND ===============*/
-function imageExpand() {
-  const screenWidth = window.screen.width;
-  console.log(screenWidth);
+/*=============== PRODUCT HIDDEN/AUTO IMAGE ===============*/
 
-  const productImages = document.querySelectorAll(".product__img");
+/* SCROLL HIDDEN */
+const productsImg = document.querySelector(".min");
+const lbox = document.querySelector(".lbox");
+const productClose = document.querySelector("#close");
 
-  productImages.forEach((Image) => {
-    if (screenWidth < 767) {
-      Image.addEventListener("click", () => {
-        toggleImage(Image);
-      });
-    }
-  });
-}
-imageExpand();
-
-const toggleImage = (Image) => {
-  Image.classList.toggle("product__imgExpand");
+const scrollHidden = () => {
+  document.documentElement.style.overflow = "hidden";
+  document.body.scroll = "no"; // InternetExplorer
 };
 
-/*   
-const productImages = document.querySelectorAll(".product__img");
+const scrollAuto = () => {
+  document.documentElement.style.overflow = "auto";
+  document.body.scroll = "yes"; // InternetExplorer
+};
 
-productImages.forEach((image) => {
-  image.addEventListener("click", () => {
-    const expandImage = document.querySelector(".product__imgExpand");
+productsImg.addEventListener("click", scrollHidden);
+productClose.addEventListener("click", scrollAuto);
 
-    toggleImage(image);
+/* CHANGE THEME IMAGE */
+function changeImage() {
+  const navLogo = document.querySelector(".nav__logo-icon");
+  const homeImg = document.querySelector(".home__img");
+  const footerImg = document.querySelector(".footer__logo-icon");
 
-    if (expandImage && expandImage !== image) {
-      toggleImage(image);
-    }
-  });
-});
-
-const toggleImage = (image) => {
-  const imageContent = image.querySelector(".product__img");
-
-  if (image.classList.contains(".product__imgExpand")) {
-    console.log("ja existe classe imgExpand aqui");
+  if (document.body.classList.contains(darkTheme)) {
+    navLogo.setAttribute("src", "assets/img/logo/doce-recado-logo-dark.png");
+    homeImg.setAttribute("src", "assets/img/logo/doce-recado-logo-dark.png");
+    footerImg.setAttribute("src", "assets/img/logo/doce-recado-logo-dark.png");
+  } else if (document.body.classList.contains(darkTheme) === false) {
+    navLogo.setAttribute("src", "assets/img/logo/doce-recado-logo-light.png");
+    homeImg.setAttribute("src", "assets/img/logo/doce-recado-logo-light.png");
+    footerImg.setAttribute("src", "assets/img/logo/doce-recado-logo-light.png");
   }
-};
- */
+}
