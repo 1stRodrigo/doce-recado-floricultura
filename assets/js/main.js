@@ -160,7 +160,7 @@ sr.reveal(`.steps__card, .product__card, .questions__group, .footer`, {
 /*=============== PRODUCT HIDDEN/AUTO IMAGE ===============*/
 
 /* SCROLL HIDDEN */
-const productsImg = document.querySelector(".min");
+/* const productsImg = document.querySelector(".min");
 const lbox = document.querySelector(".lbox");
 const productClose = document.querySelector("#close");
 
@@ -176,7 +176,7 @@ const scrollAuto = () => {
 
 productsImg.addEventListener("click", scrollHidden);
 productClose.addEventListener("click", scrollAuto);
-
+ */
 /* CHANGE THEME IMAGE */
 function changeImage() {
   const navLogo = document.querySelector(".nav__logo-icon");
