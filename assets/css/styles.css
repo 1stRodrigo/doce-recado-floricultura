@@ -542,7 +542,7 @@ the website, in dark theme
   display: flex;
   margin: 100px auto;
   flex-wrap: wrap;
-  gap: var(--mb-1);
+  gap: var(--mb-1) 0;
 }
 
 .box_img {
