@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <img src="assets/img/logo/doce-recado-logo-dark.png" alt="Doce Recado Logo" width="200">
+  <img src="assets/img/logo/doce-recado-logo-light.png" alt="Doce Recado Logo" width="200">
 <br>
 Doce Recado Floricultura | Site Responsivo 🎍
 </h1>
